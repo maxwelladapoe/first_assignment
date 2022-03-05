@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+.container {
+  @apply mx-auto my-12;
+}
+.table-data {
+  @apply text-center border py-3;
+}
+.table-header {
+  @apply text-center uppercase tracking-widest py-3;
+}
+.dialog-bg{
+    @apply fixed w-full h-full bg-gray-700 bg-opacity-80 top-0 left-0 flex items-center justify-center;
+}
+.dialog-wrap {
+  min-height: 12rem;
+  @apply w-96 bg-white rounded p-6;
+}
+.sortable {
+  @apply cursor-pointer flex items-center justify-center;
+}
+
+.delete-btn{
+    @apply disabled:opacity-20 rounded bg-red-500 text-white px-4 py-1 uppercase text-sm tracking-widest;
+}
+.cancel-btn{
+    @apply uppercase bg-red-400 rounded w-28 py-2 text-sm text-white tracking-widest;
+  
+}
+.ok-btn{
+    @apply uppercase bg-green-400 rounded w-28 py-2 text-sm text-white tracking-widest
+}
+
+.active-sort{
+    @apply bg-green-700 text-white rounded py-1 px-2;
+}
