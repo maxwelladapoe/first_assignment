@@ -105,7 +105,7 @@ const numberOfCustomers = computed(
       <select class="border h-8 w-36" v-model="filterBy">
         <option :value="null">All</option>
         <option :value="true">Active</option>
-        <option :value="false">Inactive</option>
+        <option :value="false">Cancelled</option>
       </select>
     </div>
   </div>
@@ -157,7 +157,7 @@ const numberOfCustomers = computed(
           <td class="table-data">{{ customer.id }}</td>
           <td class="table-data">{{ customer.name }}</td>
           <td class="table-data">
-            {{ customer.state ? "active" : "inactive" }}
+            {{ customer.state ? "active" : "cancelled" }}
           </td>
           <td class="table-data">{{ customer.email }}</td>
           <td class="table-data">{{ customer.phone_number }}</td>
