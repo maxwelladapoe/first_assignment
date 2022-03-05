@@ -35,7 +35,6 @@
 .ok-btn{
     @apply uppercase bg-green-400 rounded w-28 py-2 text-sm text-white tracking-widest
 }
-
 .active-sort{
     @apply bg-green-700 text-white rounded py-1 px-2;
 }
