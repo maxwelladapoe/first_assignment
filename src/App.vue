@@ -17,14 +17,11 @@ onMounted(() => {
     console.log(e)
   });
 });
-
-
 </script>
 
 <template>
   <div class="container">
     <h1 class="text-4xl font-bold">Customers</h1>
-
     <div class="mt-6">
       <Loading v-if="isLoadingData"/>
       <CustomerTable

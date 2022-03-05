@@ -11,7 +11,6 @@ const props = defineProps({
     type: Boolean,
     default: () => true,
   },
-
   showSortDetails: {
     type: Boolean,
     default: () => true,
@@ -93,18 +92,13 @@ const numberOfCustomers = computed(
     :title="dialogTitle"
     :message="dialogMessage"
   />
-
   <div class="flex items-center mb-3">
-
     <div class="mr-4 active-sort" v-if="showSortDetails">
       <p>Sorted by: {{sortProperty}} Order: {{sortDirection}} </p>
     </div>
     <div v-if="showCount">
       <p>Count: {{ numberOfCustomers }}</p>
     </div>
-         
-
-
     <div class="flex items-center ml-auto">
       <img src="../assets/filter.svg" class="inline h-2 w-4 mr-1" />
       <label class="mr-2"> Status </label>
@@ -115,7 +109,6 @@ const numberOfCustomers = computed(
       </select>
     </div>
   </div>
-
   <table class="table-auto w-full min-w-full">
     <thead>
       <tr class="bg-gray-200 border">
